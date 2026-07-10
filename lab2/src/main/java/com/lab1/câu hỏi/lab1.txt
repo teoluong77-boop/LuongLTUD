@@ -1,0 +1,37 @@
+1. Sự khác biệt giữa @Bean và @Component? Khi nào dùng cái nào?
+@Component: * Vị trí đặt: Được đánh dấu trực tiếp trên đầu Class do chính bạn viết code.
+
+Cơ chế hoạt động: Khi ứng dụng khởi chạy, Spring sẽ quét qua toàn bộ dự án (Component Scan), tự động phát hiện các class có gắn @Component và tự động khởi tạo đối tượng nạp vào Spring Context mà bạn không cần can thiệp sâu.
+
+Khi nào dùng: Sử dụng cho toàn bộ các class thuộc quyền sở hữu của bạn, do bạn tự code từ đầu và muốn Spring tự động quản lý vòng đời (ví dụ: các tầng xử lý logic như @Service, @Repository, @Controller).
+
+@Bean:
+
+Vị trí đặt: Được đánh dấu trên đầu một Phương thức (Method) nằm bên trong một class cấu hình (class có gắn @Configuration).
+
+Cơ chế hoạt động: Bạn phải tự tay viết mã logic để khởi tạo đối tượng (ví dụ: viết lệnh return new ClassName(); bên trong phương thức). Spring sẽ gọi phương thức này và lấy đối tượng trả về để quản lý.
+
+Khi nào dùng: Sử dụng khi bạn cần khởi tạo đối tượng từ các thư viện bên ngoài (những file .jar, thư viện mã nguồn mở mà bạn không thể mở ra để gõ thêm chữ @Component lên đầu class của họ được). Hoặc sử dụng khi việc tạo đối tượng quá phức tạp, cần tính toán logic hoặc truyền tham số thủ công trước khi tạo. 
+
+2. Tại sao Constructor Injection được ưa hơn Field Injection (@Autowired trên field)?
+Tính Immutable (Bất biến): Cho phép khai báo các biến phụ thuộc là final. Khi đối tượng đã được tạo ra thì các phụ thuộc này không thể bị thay đổi nữa, giúp code an toàn và tránh lỗi đa luồng (thread-safe).
+
+Dễ dàng Viết Unit Test: Không cần phải dùng đến Spring framework hay Reflection để cấu hình cho Test. Chỉ cần dùng từ khóa new và truyền trực tiếp các đối tượng giả lập (Mock) vào constructor là xong.
+
+Ngăn chặn lỗi NullPointerException: Bắt buộc phải truyền đủ các phụ thuộc vào thì mới tạo được đối tượng, tránh tình trạng gọi hàm khi biến chưa được Spring tiêm dữ liệu vào.
+
+Phát hiện Circular Dependency (Vòng lặp phụ thuộc): Spring sẽ báo lỗi ngay khi ứng dụng khởi chạy nếu Class A cần Class B và Class B lại cần Class A qua Constructor.
+
+3. @Qualifier giải quyết vấn đề gì? Thay thế nó bằng @Primary — hành vi thay đổi thế nào?
+@Qualifier giải quyết vấn đề: Khi trong Spring Context có nhiều hơn một Bean cùng chung một kiểu Interface (ví dụ: DBCommentRepository và FileCommentRepository cùng triển khai CommentRepository), Spring sẽ bị bối rối không biết chọn cái nào để tiêm (gây lỗi NoUniqueBeanDefinitionException). @Qualifier dùng để chỉ định đích danh tên Bean cụ thể cần dùng ở nơi tiêm.
+
+Thay đổi hành vi khi dùng @Primary: * Thay vì chỉ định thủ công ở từng Constructor bằng @Qualifier, ta đặt @Primary trực tiếp lên một trong hai Class Repository. Class được đánh dấu @Primary sẽ trở thành lựa chọn mặc định ưu tiên số một.
+
+Ở nơi tiêm (CommentService), ta không cần viết thêm ký hiệu gì cả, Spring sẽ tự động lấy Bean có @Primary đó vào.
+
+4. Comment (POJO) có nên là Bean không? Vì sao?
+Không nên.
+
+Lý do: Bean trong Spring được sinh ra để quản lý các thành phần cấu trúc mang tính xử lý logic, dùng chung và có vòng đời lâu dài (Singleton như Services, Repositories, Proxies).
+
+Trong khi đó, Comment chỉ là một POJO (Plain Old Java Object) đại diện cho dữ liệu động. Mỗi dòng dữ liệu, mỗi request của người dùng sẽ mang một nội dung Comment khác nhau (Author khác, Text khác) và biến đổi liên tục. Việc biến Comment thành Bean của Spring là không cần thiết và làm lãng phí bộ nhớ quản lý của hệ thống.

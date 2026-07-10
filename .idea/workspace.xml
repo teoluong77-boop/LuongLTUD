@@ -5,11 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="688473ac-96b1-47c4-8440-14b5b76cb74b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab2/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab2/src/main/java/com/lab1/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab2/src/main/java/com/lab1/config/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab2/src/main/java/com/lab1/model/Comment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab2/src/main/java/com/lab1/proxies/CommentNotificationProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab2/src/main/java/com/lab1/proxies/EmailNotificationProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab2/src/main/java/com/lab1/repositories/CommentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab2/src/main/java/com/lab1/repositories/DBCommentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab2/src/main/java/com/lab1/repositories/FileCommentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab2/src/main/java/com/lab1/services/CommentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab1/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab1/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab1/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +40,9 @@
   &quot;fromUser&quot;: false
 }</component>
   <component name="ProjectId" id="3G1C8Ulk8mb65Mk0n3fEPT1D2wm" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -39,6 +50,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "Application.com.lab.Main.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -47,6 +59,7 @@
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "C:/LTUDJAVA/LTUDJAVA/src/main/java/vn/edu/student/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
@@ -59,7 +72,7 @@
       <recent name="C:\LTUDJAVA\LTUDJAVA\lab1" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.com.lab1.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="vn.edu.student.Main" />
       <module name="lab1" />
@@ -73,8 +86,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="com.lab1.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lab1.Main" />
+      <module name="lab2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lab1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.com.lab1.Main" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
