@@ -5,20 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="688473ac-96b1-47c4-8440-14b5b76cb74b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lab2/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab2/src/main/java/com/lab1/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab2/src/main/java/com/lab1/config/AppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab2/src/main/java/com/lab1/model/Comment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab2/src/main/java/com/lab1/proxies/CommentNotificationProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab2/src/main/java/com/lab1/proxies/EmailNotificationProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab2/src/main/java/com/lab1/repositories/CommentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab2/src/main/java/com/lab1/repositories/DBCommentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab2/src/main/java/com/lab1/repositories/FileCommentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab2/src/main/java/com/lab1/services/CommentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab2/src/main/java/com/lab2/lifecycle/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab2/src/main/java/com/lab2/lifecycle/config/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab2/src/main/java/com/lab2/lifecycle/managed/ManagedBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab2/src/main/java/com/lab2/lifecycle/prototype/RequestProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab2/src/main/java/com/lab2/lifecycle/singleton/ServiceA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab2/src/main/java/com/lab2/lifecycle/singleton/ServiceB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/target/classes/com/lab/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/target/classes/com/lab/config/AppConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/target/classes/com/lab/model/Comment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/target/classes/com/lab/proxies/CommentNotificationProxy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/target/classes/com/lab/proxies/EmailNotificationProxy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/target/classes/com/lab/repositories/CommentRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/target/classes/com/lab/repositories/DBCommentRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/target/classes/com/lab/repositories/FileCommentRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/target/classes/com/lab/services/CommentService.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +54,7 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "Application.com.lab.Main.executor": "Run",
+    "Application.com.lab2.lifecycle.Main.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -72,7 +76,7 @@
       <recent name="C:\LTUDJAVA\LTUDJAVA\lab1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.com.lab1.Main">
+  <component name="RunManager" selected="Application.com.lab2.lifecycle.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="vn.edu.student.Main" />
       <module name="lab1" />
@@ -99,8 +103,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="com.lab2.lifecycle.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lab2.lifecycle.Main" />
+      <module name="lab2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lab2.lifecycle.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.com.lab2.lifecycle.Main" />
         <item itemvalue="Application.com.lab1.Main" />
         <item itemvalue="Application.Main" />
       </list>

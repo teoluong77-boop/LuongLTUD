@@ -1,0 +1,19 @@
+1. Tại sao ServiceB được khởi tạo trước ServiceA?
+Theo mặc định, khi quét package (Component Scan), Spring sẽ khởi tạo các Singleton Bean dựa trên thứ tự bảng chữ cái của tên file/tên class. Do chữ B đứng trước chữ A trong bảng chữ cái nên ServiceB được quét qua và khởi tạo trước ServiceA.
+
+Thứ tự này có thể thay đổi nếu giữa hai Bean có quan hệ phụ thuộc lẫn nhau (ví dụ: ServiceA cần inject ServiceB thì ServiceB bắt buộc phải tạo trước), hoặc khi sử dụng ký hiệu @DependsOn để ép buộc thứ tự.
+
+2. @PostConstruct khác gì so với việc viết code khởi tạo trong Constructor?
+Constructor: Được gọi khi đối tượng vừa mới tạo bằng từ khóa new. Tại thời điểm này, các phụ thuộc (Dependencies) chưa được Spring tiêm (inject) vào, mọi biến phụ thuộc được gọi đều sẽ bị lỗi NullPointerException.
+
+@PostConstruct: Được gọi ngay sau khi Constructor chạy xong và các phụ thuộc đã được Spring tiêm vào đầy đủ. Do đó, nó là nơi an toàn và lý tưởng nhất để thực hiện các logic khởi tạo có sử dụng đến các Bean phụ thuộc khác (như tải dữ liệu từ Database, cấu hình bộ nhớ đệm Cache, xác thực thông số cấu hình...).
+
+3. Singleton bean có attribute mutable (có thể thay đổi) gây ra vấn đề gì trong môi trường multi-thread?
+Gây ra lỗi tranh chấp dữ liệu (Race Condition) và mất an toàn luồng (Thread-Unsafe).
+
+Vì Singleton Bean chỉ có một thực thể duy nhất dùng chung cho toàn bộ ứng dụng, khi có nhiều luồng (đa luồng) truy cập cùng một lúc và cùng thay đổi giá trị của attribute mutable đó, các luồng sẽ ghi đè dữ liệu lên nhau. Điều này dẫn đến việc dữ liệu bị sai lệch, không đồng nhất và gây ra các lỗi hệ thống rất khó kiểm soát.
+
+4. Tại sao inject Prototype vào Singleton bằng @Autowired thông thường lại sai?
+Vấn đề Scope lệch nhau: Singleton Bean chỉ được tạo duy nhất 1 lần khi ứng dụng khởi chạy. Do đó, Spring cũng chỉ tiêm (inject) Bean Prototype vào thuộc tính của Singleton Bean đúng 1 lần duy nhất đó.
+
+Hậu quả: Trong suốt vòng đời của ứng dụng, khi ta gọi Singleton Bean thì thực thể Prototype được tiêm bên trong nó vẫn giữ nguyên là thực thể cũ từ lúc khởi chạy, bị biến thành Singleton một cách cưỡng ép. Cơ chế tạo thực thể mới mỗi lần gọi của Prototype Scope hoàn toàn bị vô hiệu hóa. Để giải quyết đúng cách, phải sử dụng @Lookup hoặc tiêm ObjectFactory / ApplicationContext.
