@@ -1,0 +1,17 @@
+1. @SpringBootApplication gồm những annotation nào? Mỗi cái làm gì?
+Gồm 3 annotation cốt lõi sau:
+@SpringBootConfiguration: Đánh dấu lớp này là một lớp cấu hình (Configuration class), cho phép đăng ký thêm các Bean thông qua các phương thức @Bean.
+@EnableAutoConfiguration: Kích hoạt cơ chế tự động cấu hình của Spring Boot. Nó sẽ tự động quét classpath và cấu hình các thư viện liên quan (như Database, Security, Web...) mà không cần cấu hình bằng tay.
+@ComponentScan: Tự động quét toàn bộ các package con tính từ package chứa file chính để tìm và đăng ký các Component (như @Component, @Service, @Repository, @RestController) vào Spring Container.
+
+2. Sự khác biệt giữa @Value("${key}") và @Value("${key:default}")?
+@Value("${key}"): Bắt buộc cấu hình key phải tồn tại trong các file .properties hoặc biến môi trường. Nếu ứng dụng khởi chạy mà không tìm thấy key này, Spring Boot sẽ ném ra lỗi IllegalArgumentException và crash ứng dụng ngay lập tức.
+@Value("${key:default}"): Cho phép định nghĩa một giá trị mặc định (default). Nếu hệ thống tìm không thấy key, ứng dụng vẫn khởi chạy bình thường và gán giá trị mặc định đó cho thuộc tính.
+
+3. CommandLineRunner.run() được gọi khi nào trong vòng đời ứng dụng?
+Phương thức run() của CommandLineRunner được gọi sau khi Spring Application Context hoàn tất quá trình khởi tạo và toàn bộ các Bean trong ứng dụng đã được nạp, cấu hình xong xuôi.
+Nó chạy ngay trước khi quá trình kích hoạt (Bootstrap) ứng dụng hoàn thành, thường dùng để thực thi các tác vụ chạy một lần khi vừa khởi động xong (như nạp dữ liệu mẫu vào DB, kiểm tra kết nối hệ thống...).
+
+4. Khi đặt spring.profiles.active=prod, application.properties có còn được đọc không?
+Có, vẫn được đọc bình thường. * Spring Boot luôn luôn đọc file gốc application.properties đầu tiên để lấy các cấu hình chung cho mọi môi trường.
+Sau đó, nó mới đọc tiếp file application-prod.properties để lấy các cấu hình riêng cho môi trường sản phẩm. Nếu có bất kỳ cấu hình nào trùng key giữa hai file, giá trị trong file application-prod.properties sẽ được ưu tiên ghi đè lên giá trị của file gốc.
