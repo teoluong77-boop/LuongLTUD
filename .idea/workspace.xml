@@ -5,16 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="688473ac-96b1-47c4-8440-14b5b76cb74b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/lab4/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/src/main/java/vn/edu/gdu/lab4/Lab4Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/src/main/java/vn/edu/gdu/lab4/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/src/main/java/vn/edu/gdu/lab4/entity/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/src/main/java/vn/edu/gdu/lab4/repository/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/src/test/java/vn/edu/gdu/lab4/Lab4ApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab3/src/main/java/com/example/productapp/ProductAppApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab3/src/main/java/com/example/productapp/ProductAppApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab3/src/main/java/com/example/productapp/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab3/src/main/java/com/example/productapp/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab3/src/main/java/com/example/productapp/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab3/src/main/java/com/example/productapp/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab3/src/main/java/com/example/productapp/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab3/src/main/java/com/example/productapp/model/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab3/src/main/java/com/example/productapp/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab3/src/main/java/com/example/productapp/service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab3/src/main/resources/templates/product-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab3/src/main/resources/templates/product-detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab3/src/main/resources/templates/products.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab3/src/main/resources/templates/products.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab3/src/test/java/com/example/productapp/controller/ProductControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab3/src/test/java/com/example/productapp/controller/ProductControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab3/src/test/java/com/example/productapp/service/ProductServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab3/src/test/java/com/example/productapp/service/ProductServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/src/main/java/com/lab1/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/src/main/java/com/lab1/config/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/target/classes/com/lab1/config/AppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/target/classes/com/lab1/config/AppConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +33,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -50,19 +60,23 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "Application.com.lab.Main.executor": "Run",
+    "Application.com.lab1.Main.executor": "Run",
     "Application.com.lab2.lifecycle.Main.executor": "Run",
+    "Maven.LTUDJAVA [clean,install,-U].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "Spring Boot.Lab3Application.executor": "Run",
+    "Spring Boot.Lab4Application.executor": "Run",
     "Spring Boot.ProductAppApplication.executor": "Run",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/LTUDJAVA/LTUDJAVA/lab4",
     "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/LTUDJAVA/LTUDJAVA/src/main/java/vn/edu/student/Main.java",
+    "onboarding.tips.debug.path": "C:/LTUDJAVA/LTUDJAVA/lab4/src/main/java/vn/edu/gdu/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -70,11 +84,19 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\LTUDJAVA\LTUDJAVA\lab4" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\LTUDJAVA\LTUDJAVA\lab1" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ProductAppApplication">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean install -U" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.Lab4Application">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="vn.edu.student.Main" />
       <module name="lab1" />
@@ -128,13 +150,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductAppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="Lab4Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
-      <module name="lab3" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.productapp.ProductAppApplication" />
+      <module name="lab4" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="vn.edu.gdu.lab4.Lab4Application" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.productapp.*" />
+          <option name="PATTERN" value="vn.edu.gdu.lab4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -144,11 +166,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.ProductAppApplication" />
+        <item itemvalue="Spring Boot.Lab4Application" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Spring Boot.Lab3Application" />
         <item itemvalue="Application.com.lab2.lifecycle.Main" />
         <item itemvalue="Application.com.lab1.Main" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -180,6 +202,16 @@
           <url>file://$PROJECT_DIR$/lab1/src/main/java/vn/edu/student/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/lab4/src/main/java/vn/edu/student/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/lab4/src/main/java/vn/edu/student/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
