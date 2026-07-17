@@ -1,27 +1,27 @@
-/* Style don gian, gon gang cho ung dung quan ly san pham. */
+/* Style tối giản sang xịn mịn */
 * { box-sizing: border-box; }
 
 body {
     font-family: system-ui, "Segoe UI", Arial, sans-serif;
     margin: 0;
     padding: 24px;
-    background: #f5f6f8;
-    color: #1f2328;
+    background: #0f172a; /* Nền tối hẳn */
+    color: #cbd5e1; /* Chữ sáng nhạt */
     line-height: 1.5;
 }
 
-h1 { margin-top: 0; }
+h1 { margin-top: 0; color: #f8fafc; }
 
 .container {
     max-width: 860px;
     margin: 0 auto;
-    background: #fff;
+    background: #1e293b; /* Khung nền tối vừa */
     padding: 24px 28px;
-    border: 1px solid #e3e6ea;
+    border: 1px solid #334155;
     border-radius: 10px;
 }
 
-a { color: #2563eb; text-decoration: none; }
+a { color: #38bdf8; text-decoration: none; } /* Link màu xanh dương sáng */
 a:hover { text-decoration: underline; }
 
 .btn {
@@ -29,17 +29,17 @@ a:hover { text-decoration: underline; }
     padding: 8px 14px;
     border: none;
     border-radius: 6px;
-    background: #2563eb;
+    background: #0ea5e9;
     color: #fff;
     font-size: 14px;
     cursor: pointer;
     text-decoration: none;
 }
-.btn:hover { background: #1d4ed8; text-decoration: none; }
-.btn-danger { background: #dc2626; }
-.btn-danger:hover { background: #b91c1c; }
-.btn-secondary { background: #6b7280; }
-.btn-secondary:hover { background: #4b5563; }
+.btn:hover { background: #0284c7; text-decoration: none; }
+.btn-danger { background: #f43f5e; }
+.btn-danger:hover { background: #e11d48; }
+.btn-secondary { background: #64748b; }
+.btn-secondary:hover { background: #475569; }
 
 .toolbar {
     display: flex;
@@ -52,9 +52,11 @@ a:hover { text-decoration: underline; }
 
 input[type="text"], input[type="number"] {
     padding: 8px 10px;
-    border: 1px solid #cbd2d9;
+    background: #334155;
+    border: 1px solid #475569;
     border-radius: 6px;
     font-size: 14px;
+    color: #fff;
 }
 
 table {
@@ -63,19 +65,19 @@ table {
     margin-top: 8px;
 }
 th, td {
-    border: 1px solid #e3e6ea;
+    border: 1px solid #334155;
     padding: 10px 12px;
     text-align: left;
 }
-th { background: #f0f2f5; }
-tr:nth-child(even) td { background: #fafbfc; }
+th { background: #1e293b; color: #f8fafc; }
+tr:nth-child(even) td { background: #1e293b; }
 td.price { text-align: right; white-space: nowrap; }
 td.actions { white-space: nowrap; }
 td.actions form { display: inline; }
 
 .form-group { margin-bottom: 16px; }
 .form-group label { display: block; font-weight: 600; margin-bottom: 6px; }
-.error { color: #dc2626; font-size: 13px; margin-left: 4px; }
+.error { color: #f43f5e; font-size: 13px; margin-left: 4px; }
 
 .detail p { margin: 8px 0; }
-.muted { color: #6b7280; }
+.muted { color: #94a3b8; }

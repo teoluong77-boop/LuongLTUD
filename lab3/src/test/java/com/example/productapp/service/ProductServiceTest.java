@@ -6,10 +6,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-/**
- * Unit test cho ProductService (khong can Spring context nen chay rat nhanh
- * va moi test co du lieu doc lap).
- */
+
 class ProductServiceTest {
 
     private ProductService service;
@@ -71,14 +68,14 @@ class ProductServiceTest {
 
     @Test
     void idStaysUniqueAfterDelete() {
-        service.deleteById(2);                                  // xoa Mouse (id 2)
+        service.deleteById(2);
         Product added = service.add(new Product(0, "Monitor", 3000000));
-        assertThat(added.getId()).isEqualTo(3);                 // khong tai su dung id cu
+        assertThat(added.getId()).isEqualTo(3);
     }
 
     @Test
     void formatPriceUsesVietnameseGrouping() {
-        assertThat(service.formatPrice(15000000)).isEqualTo("15.000.000 ₫");
-        assertThat(service.formatPrice(250000)).isEqualTo("250.000 ₫");
+        assertThat(service.formatPrice(15000000)).isEqualTo("10.000.000 ₫");
+        assertThat(service.formatPrice(250000)).isEqualTo("200.000 ₫");
     }
 }

@@ -3,10 +3,7 @@ package com.example.productapp.model;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
 
-/**
- * Model san pham. Cac annotation validation duoc kiem tra khi controller
- * nhan tham so gan {@code @Valid}.
- */
+
 public class Product {
 
     private int id;

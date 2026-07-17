@@ -13,7 +13,6 @@
     <div class="detail" th:if="${product != null}">
         <p>ID: <span th:text="${product.id}"></span></p>
         <p>Tên: <span th:text="${product.name}"></span></p>
-        <!-- Bài tập mở rộng (3): format giá tiền theo VNĐ -->
         <p>Giá: <span th:text="|${#numbers.formatInteger(product.price, 1, 'POINT')} ₫|"></span></p>
     </div>
 
