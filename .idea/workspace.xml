@@ -5,24 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="688473ac-96b1-47c4-8440-14b5b76cb74b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lab4/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab4/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab4/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab4/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab4/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab4/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab4/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab4/src/main/java/vn/edu/gdu/lab4/Lab4Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab4/src/main/java/vn/edu/gdu/lab4/controller/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab4/src/main/java/vn/edu/gdu/lab4/entity/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab4/src/main/java/vn/edu/gdu/lab4/repository/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab4/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab4/src/test/java/vn/edu/gdu/lab4/Lab4ApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab5/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab5/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab5/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab5/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab5/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab5/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab5/src/main/java/vn/edu/gdu/springjpalab/Ch5LabSpringJpaApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab5/src/main/java/vn/edu/gdu/springjpalab/controller/CourseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab5/src/main/java/vn/edu/gdu/springjpalab/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab5/src/main/java/vn/edu/gdu/springjpalab/controller/StudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab5/src/main/java/vn/edu/gdu/springjpalab/entity/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab5/src/main/java/vn/edu/gdu/springjpalab/entity/Course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab5/src/main/java/vn/edu/gdu/springjpalab/entity/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab5/src/main/java/vn/edu/gdu/springjpalab/entity/Profile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab5/src/main/java/vn/edu/gdu/springjpalab/entity/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab5/src/main/java/vn/edu/gdu/springjpalab/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab5/src/main/java/vn/edu/gdu/springjpalab/repository/CategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab5/src/main/java/vn/edu/gdu/springjpalab/repository/CourseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab5/src/main/java/vn/edu/gdu/springjpalab/repository/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab5/src/main/java/vn/edu/gdu/springjpalab/repository/ProfileRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab5/src/main/java/vn/edu/gdu/springjpalab/repository/StudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab5/src/main/java/vn/edu/gdu/springjpalab/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab5/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2/src/main/java/com/lab1/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/src/main/java/com/lab1/config/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2/target/classes/com/lab1/config/AppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/target/classes/com/lab1/config/AppConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +49,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -68,13 +84,14 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Spring Boot.Ch5LabSpringJpaApplication.executor": "Run",
     "Spring Boot.Lab3Application.executor": "Run",
     "Spring Boot.Lab4Application.executor": "Run",
     "Spring Boot.ProductAppApplication.executor": "Run",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/LTUDJAVA/LTUDJAVA/lab4",
+    "last_opened_file_path": "C:/LTUDJAVA/LTUDJAVA/lab5",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "C:/LTUDJAVA/LTUDJAVA/lab4/src/main/java/vn/edu/gdu/Main.java",
     "project.structure.last.edited": "Modules",
@@ -85,6 +102,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\LTUDJAVA\LTUDJAVA\lab5" />
       <recent name="C:\LTUDJAVA\LTUDJAVA\lab4" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -96,7 +114,7 @@
       <command value="mvn clean install -U" />
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Lab4Application">
+  <component name="RunManager" selected="Spring Boot.Ch5LabSpringJpaApplication">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="vn.edu.student.Main" />
       <module name="lab1" />
@@ -110,12 +128,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.lab1.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lab1.Main" />
+    <configuration name="com.lab2.lifecycle.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lab2.lifecycle.Main" />
       <module name="lab2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lab1.*" />
+          <option name="PATTERN" value="com.lab2.lifecycle.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,12 +141,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.lab2.lifecycle.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lab2.lifecycle.Main" />
-      <module name="lab2" />
+    <configuration name="Ch5LabSpringJpaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+      <module name="lab5" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="vn.edu.gdu.springjpalab.Ch5LabSpringJpaApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lab2.lifecycle.*" />
+          <option name="PATTERN" value="vn.edu.gdu.springjpalab.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -166,11 +185,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.Ch5LabSpringJpaApplication" />
         <item itemvalue="Spring Boot.Lab4Application" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Spring Boot.Lab3Application" />
         <item itemvalue="Application.com.lab2.lifecycle.Main" />
-        <item itemvalue="Application.com.lab1.Main" />
       </list>
     </recent_temporary>
   </component>
